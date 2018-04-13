@@ -20,7 +20,6 @@
 <form action="{% url 'blog:home_page' %}" method="POST">
 {% csrf_token %}
 	<input type="text" placeholder="type yoru usernmae" name="username">
-	
 	<textarea placeholder="Type your comment" name="comment"></textarea>
 	<input type="submit" value="Post ME!" name="">
 </form>
