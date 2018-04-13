@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Dina's page</title>
+</head>
+<body>
+<h1>Hi my name is dina. Welcome</h1>
+
+
+<h2>How To Win Frineds</h2>
+<p>
+	Have you ever wanted to know how to win frineds? Now I an tell you. All you have to do is....
+
+	Have you ever wanted to know how to win frineds? Now I an tell you. All you have to do is....
+
+
+</p>
+
+<button>Like</button>
+<form action="{% url 'blog:home_page' %}" method="POST">
+{% csrf_token %}
+	<input type="text" placeholder="type yoru usernmae" name="username">
+	
+	<textarea placeholder="Type your comment" name="comment"></textarea>
+	<input type="submit" value="Post ME!" name="">
+</form>
+
+<h2>Comments</h2>
+User {{username}} says: {{comment}}
+
+</body>
+</html>
