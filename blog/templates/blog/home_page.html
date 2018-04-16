@@ -4,14 +4,16 @@
 	<title>Welcome to Dina's page</title>
 </head>
 <body>
+
+
 <h1>Hi my name is dina. Welcome</h1>
 
+<img src="https://tse3-mm.cn.bing.net/th?id=OIP.Njds_or8OjS2PhCkCGVekQHaFY&p=0&o=5&pid=1.1">
 
-<h2>How To Win Frineds</h2>
+<h2>A Chinese rapper named 鬼卞</h2>
 <p>
-	Have you ever wanted to know how to win frineds? Now I an tell you. All you have to do is....
-
-	Have you ever wanted to know how to win frineds? Now I an tell you. All you have to do is....
+	Have you ever heard of him?(there is a picture of him above~)
+	Talk about the information that you know about 鬼卞!!!!!
 
 
 </p>
@@ -19,12 +21,12 @@
 <button>Like</button>
 <form action="{% url 'blog:home_page' %}" method="POST">
 {% csrf_token %}
-	<input type="text" placeholder="type yoru usernmae" name="username">
-	<textarea placeholder="Type your comment" name="comment"></textarea>
-	<input type="submit" value="Post ME!" name="">
+	<input type="text" placeholder="type your username" name="username">
+	<textarea placeholder="Say whatever u want!!!" name="comment"></textarea>
+	<input type="submit" value="Go!!!" name="">
 </form>
 
-<h2>Comments</h2>
+<h2>WoW</h2>
 User {{comment.user}} says: {{comment.comment}}
 
 </body>
